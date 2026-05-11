@@ -5,21 +5,21 @@
 class CenveroCetus < Formula
   desc "HTML to video renderer - self-contained, deterministic, fast"
   homepage "https://cetus.cenvero.org"
-  version "0.7.0"
+  version "0.8.0"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cenvero/cetus/releases/download/v0.7.0/cetus_v0.7.0_darwin_amd64.tar.gz"
-      sha256 "f4b1c923538ca244df88f402761d10d6bc63f8eec8c2c1fa39c83ce1f8abd40d"
+      url "https://github.com/cenvero/cetus/releases/download/v0.8.0/cetus_v0.8.0_darwin_amd64.tar.gz"
+      sha256 "6cc5fc71746d110b816aeb2e274d36f930eac23f60c05e260981ef00a048cc5c"
 
       define_method(:install) do
         bin.install "cetus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cenvero/cetus/releases/download/v0.7.0/cetus_v0.7.0_darwin_arm64.tar.gz"
-      sha256 "722c8bd9aa8efc8c065b30928e191e3d669b2f1b23abdaf64dca5703813752c5"
+      url "https://github.com/cenvero/cetus/releases/download/v0.8.0/cetus_v0.8.0_darwin_arm64.tar.gz"
+      sha256 "30f45fef52ae807b10dbd83a3f27dc355e4c7366ca9237e3a9d046cf97e13ef5"
 
       define_method(:install) do
         bin.install "cetus"
@@ -29,8 +29,8 @@ class CenveroCetus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cenvero/cetus/releases/download/v0.7.0/cetus_v0.7.0_linux_amd64.tar.gz"
-      sha256 "d793cbfe384bd261879dca9d981d8171007ca5a7b53b4c338a2d004575ac9c1c"
+      url "https://github.com/cenvero/cetus/releases/download/v0.8.0/cetus_v0.8.0_linux_amd64.tar.gz"
+      sha256 "b78417a73c087277fbab0583fbfd3625490ec427914bbbe7ba53a62c2428a198"
       define_method(:install) do
         bin.install "cetus"
       end
